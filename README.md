@@ -68,5 +68,5 @@ All summary values update **automatically** when data changes.
 
 ---
 
-## 📂 Project Structure
+
 
