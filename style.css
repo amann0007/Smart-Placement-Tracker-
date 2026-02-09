@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f1f5f9;
+    color: #1f2933;
+}
+
+header {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+/* FORM */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #475569;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* BUTTON */
+.button-wrapper {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.primary-btn {
+    padding: 10px 24px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    width: auto;
+}
+
+.primary-btn:hover {
+    background: #1e40af;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #e2e8f0;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+td button {
+    margin: 0 4px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+td button:first-child {
+    background: #22c55e;
+}
+
+td button:last-child {
+    background: #ef4444;
+}
+
+/* SUMMARY */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.summary-card span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+

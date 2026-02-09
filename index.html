@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Placement Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Placement / Internship Tracker</h1>
+    <p>Track all your applications in one place</p>
+</header>
+
+<main class="container">
+
+    <!-- FORM SECTION -->
+    <section class="card">
+        <h2>Add / Update Application</h2>
+
+        <form id="appForm" class="form-grid">
+            <input type="hidden" id="editIndex">
+
+            <div>
+                <label>Company Name</label>
+                <input type="text" id="company" required>
+            </div>
+
+            <div>
+                <label>Role / Position</label>
+                <input type="text" id="role" required>
+            </div>
+
+            <div>
+                <label>Application Stage</label>
+                <select id="stage">
+                    <option>Applied</option>
+                    <option>Online Assessment</option>
+                    <option>Interview</option>
+                    <option>Offer</option>
+                    <option>Rejected</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Result</label>
+                <select id="result">
+                    <option>Pending</option>
+                    <option>Cleared</option>
+                    <option>Rejected</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Applied Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <!-- FEASIBLE BUTTON -->
+            <div class="button-wrapper">
+                <button type="submit" class="primary-btn">
+                    Save Application
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- APPLICATION LIST -->
+    <section class="card">
+        <h2>Applications</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Stage</th>
+                    <th>Result</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="appList"></tbody>
+        </table>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="summary">
+        <div class="summary-card">
+            <h3>Total</h3>
+            <span id="total">0</span>
+        </div>
+        <div class="summary-card">
+            <h3>Interviews</h3>
+            <span id="interviews">0</span>
+        </div>
+        <div class="summary-card">
+            <h3>Offers</h3>
+            <span id="offers">0</span>
+        </div>
+        <div class="summary-card">
+            <h3>Rejected</h3>
+            <span id="rejections">0</span>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
